@@ -10,6 +10,9 @@ def ia(board,signe):
          [2, 5, 8], 
          [3, 6, 9]]
     dunno how i reversed the list... still work tho, but i mind changing this
+    
+    update from nowhere : the bug is not from here, but from the original file, that put L[0] as [1,4,7] but dunno why
+    gonna try to repair this
     '''
     
     #selection of the player, but not really important (maybe a little)
