@@ -10,9 +10,6 @@ def ia(board,signe):
          [2, 5, 8], 
          [3, 6, 9]]
     dunno how i reversed the list... still work tho, but i mind changing this
-
-    update from nowhere : the bug is not from here, but from the original file, that put L[0] as [1,4,7] but dunno why
-    gonna try to repair this
     '''
     
     #selection of the player, but not really important (maybe a little)
@@ -77,12 +74,24 @@ def ia(board,signe):
     print(z+1)
     return [z//3,z%3]
 
-
+def ia0(board,signe):
+    '''
+    the siplest difficulty, it plays at random places
+    goodluck to play against this XD
+    '''
+    listing = []
+    for a in range(len(board)):
+        if board[a] == 0:
+            listing.append(a)
+            print(listing)
+    z = choice(listing)
+    print(z+1)
+    return [z//3,z%3]
 def ia1(board,signe):
     '''
-    The first level of some of my bots
-    kinda short ik
+    easy clutch
     '''
     ia(board,signe)
 def ia2(board,signe):
+    
     pass
